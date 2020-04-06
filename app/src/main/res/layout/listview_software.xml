@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_background_white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="16.0dip">
+
+    <ImageView
+        android:id="@+id/app_icon"
+        android:layout_width="@android:dimen/app_icon_size"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:layout_marginEnd="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:contentDescription="@null" />
+
+    <LinearLayout
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+        <TextView
+            android:id="@+id/app_size"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="开机/后台自启"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="?android:textColorSecondary" />
+    </LinearLayout>
+
+    <com.kadaluarsa.cleaner.views.RippleView
+        android:id="@+id/riple_uninstall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        ripple:rv_color="@color/title_bg"
+        ripple:rv_type="rectangle"
+        ripple:rv_zoom="true">
+
+        <TextView
+            android:id="@+id/download"
+            android:layout_width="80.0dip"
+            android:layout_height="40.0dip"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5.0dip"
+            android:background="@drawable/remove_bg"
+            android:gravity="center"
+            android:text="Uninstall"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_middle" />
+    </com.kadaluarsa.cleaner.views.RippleView>
+</LinearLayout>

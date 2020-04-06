@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gray_drawable"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.4">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="200.0dip"
+            android:layout_centerInParent="true">
+
+            <RelativeLayout
+                android:id="@id/arc_left"
+                android:layout_width="wrap_content"
+                android:layout_height="250.0dip"
+                android:layout_centerVertical="true">
+
+                <RelativeLayout
+                    android:layout_width="120.0dip"
+                    android:layout_height="120.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/shape_circle"
+                    android:visibility="gone" />
+
+                <com.kadaluarsa.cleaner.widget.circleprogress.ArcProgress
+                    android:id="@id/arc_store"
+                    android:layout_width="180.0dip"
+                    android:layout_height="180.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    custom:arc_bottom_text="STORAGE"
+                    custom:arc_bottom_text_size="18.0dip"
+                    custom:arc_progress="50"
+                    custom:arc_stroke_width="5.0dip"
+                    custom:arc_suffix_text_size="30.0sp"
+                    custom:arc_text_color="@color/orange"
+                    custom:arc_text_size="60.0sp" />
+                <TextView
+                    android:id="@+id/capacity"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="12dip"
+                    android:text="20/30"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="40dip" />
+            </RelativeLayout>
+
+            <com.kadaluarsa.cleaner.widget.circleprogress.ArcProgress
+                android:id="@id/arc_process"
+                android:layout_width="120.0dip"
+                android:layout_height="120.0dip"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="25.0dip"
+                android:layout_marginLeft="15.0dip"
+                android:layout_toRightOf="@id/arc_left"
+                custom:arc_bottom_text="RAM"
+                custom:arc_bottom_text_size="14.0dip"
+                custom:arc_progress="10"
+                custom:arc_stroke_width="5.0dip"
+                custom:arc_suffix_text_size="20.0sp"
+                custom:arc_text_color="@color/orange"
+                custom:arc_text_size="40.0sp" />
+
+            <RelativeLayout
+                android:layout_width="70.0dip"
+                android:layout_height="70.0dip"
+                android:layout_alignBottom="@id/arc_process"
+                android:layout_alignLeft="@id/arc_process"
+                android:layout_alignStart="@id/arc_process"
+                android:layout_marginBottom="25.0dip"
+                android:layout_marginLeft="25.0dip"
+                android:background="@drawable/shape_circle"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#ff3762ad"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="dddd" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0">
+
+        <include layout="@layout/new_card" />
+    </RelativeLayout>
+</LinearLayout>

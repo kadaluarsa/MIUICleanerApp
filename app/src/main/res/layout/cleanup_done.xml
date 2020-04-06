@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app1="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backgroud_layout"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="192.0dip"
+            android:layout_height="192.0dip"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <com.kadaluarsa.cleaner.views.HoloCircularProgressBar
+                    android:id="@id/clean_done_holoCircularProgressBar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    app1:marker_progress="0.0"
+                    app1:marker_visible="false"
+                    app1:progress="0"
+                    app1:progress_background_color="@color/circle_progress_background"
+                    app1:progress_color="@color/circle_progress"
+                    app1:stroke_width="6.0dip" />
+
+                <ImageView
+                    android:id="@id/clean_done_iv_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="16.0dip"
+                    android:background="@drawable/circle_floating_bg"
+                    android:rotation="-30.0"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@id/clean_done_iv_done"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="40.0dip"
+                    android:src="@drawable/ic_done_white_128dp_2x"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/clean_up_rocket"
+                    android:layout_width="112.0dip"
+                    android:layout_height="112.0dip"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@id/clean_up_done_tv_notice"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginRight="16.0dip"
+            android:layout_marginTop="32.0dip"
+            android:gravity="center"
+            android:text="@string/boost_notice"
+            android:textColor="@color/white"
+            android:textSize="12.0sp"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@id/clean_up_done_icon_container"
+            android:layout_width="144.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="32.0dip">
+
+            <TextView
+                android:id="@id/clean_up_tv_done"
+                android:layout_width="wrap_content"
+                android:layout_height="48.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="32.0dip"
+                android:background="@drawable/button_done_selector"
+                android:gravity="center"
+                android:minWidth="64.0dip"
+                android:paddingBottom="8.0dip"
+                android:paddingLeft="32.0dip"
+                android:paddingRight="32.0dip"
+                android:paddingTop="8.0dip"
+                android:text="DONE"
+                android:textColor="@color/phoneboost_text_top_color_white_blue"
+                android:textSize="16.0sp"
+                android:typeface="sans"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

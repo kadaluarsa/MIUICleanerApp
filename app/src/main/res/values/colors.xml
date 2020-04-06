@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="blue">#ff1d83ce</color>
+    <color name="blue_200">#ff90caf9</color>
+    <color name="blue_500">#ff2196f3</color>
+    <color name="background_floating_material_dark">#ff424242</color>
+    <color name="background_floating_material_light">#ffeeeeee</color>
+    <color name="background_material_dark">#ff303030</color>
+    <color name="background_material_light">#ffeeeeee</color>
+    <color name="background_tab_pressed">#ffffffff</color>
+
+    <color name="button_material_dark">#ff5a595b</color>
+    <color name="button_material_light">#ffd6d7d7</color>
+    <color name="card_normal">#e6ffffff</color>
+    <color name="card_pressed">#19000000</color>
+    <color name="chglib_background_default_divider_color">#ffdadadc</color>
+    <color name="chglib_material_background_default_divider_color">#1f000000</color>
+    <color name="chglib_material_color_text_1">#de000000</color>
+    <color name="chglib_material_color_text_2">#8a000000</color>
+    <color name="chglib_material_color_text_3">#60000000</color>
+    <color name="circle_progress">#ffc0d6fb</color>
+    <color name="circle_progress_background">#33ffffff</color>
+    <color name="common_action_bar_splitter">#ffd2d2d2</color>
+
+    <color name="cpb_default_color">#ff33b5e5</color>
+    <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
+    <color name="dim_foreground_disabled_material_light">#80323232</color>
+    <color name="dim_foreground_material_dark">#ffbebebe</color>
+    <color name="dim_foreground_material_light">#ff323232</color>
+    <color name="divider">#88cccccc</color>
+    <color name="drawer_bg_color_bottom">#ff1e2733</color>
+    <color name="drawer_bg_color_divide">#ff243040</color>
+    <color name="drawer_bg_color_normal">#00ffffff</color>
+    <color name="drawer_bg_color_press">#ffeeeeee</color>
+    <color name="drawer_bg_color_white">#ff2d353f</color>
+    <color name="gplus_color_1">#ff3e802f</color>
+    <color name="gplus_color_2">#fff4b400</color>
+    <color name="gplus_color_3">#ff427fed</color>
+    <color name="gplus_color_4">#ffb23424</color>
+    <color name="gray">#ff323a45</color>
+    <color name="green">#ff2c5aa9</color>
+    <color name="green_6a">#ff2c5aa9</color>
+    <color name="header_selected_color">#55ffffff</color>
+    <color name="highlighted_text_material_dark">#6680cbc4</color>
+    <color name="highlighted_text_material_light">#66009688</color>
+    <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark
+    </color>
+    <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_light
+    </color>
+    <color name="ldrawer_color">#ffffffff</color>
+    <color name="link_text_material_dark">@color/material_deep_teal_200</color>
+    <color name="link_text_material_light">@color/material_deep_teal_500</color>
+    <color name="list_selector_pressed">#ffdbdbdb</color>
+    <color name="list_selector_pressed_dark">#55eeeeff</color>
+    <color name="material_blue_grey_800">#ff37474f</color>
+    <color name="material_blue_grey_900">#ff263238</color>
+    <color name="material_blue_grey_950">#ff21272b</color>
+    <color name="material_deep_teal_200">#ff80cbc4</color>
+    <color name="material_deep_teal_500">#ff009688</color>
+    <color name="orange">#ffffffff</color>
+    <color name="phoneboost_text_top_color_white_blue">#eeffffff</color>
+    <color name="phoneboost_top_color_blue">#ff4285f4</color>
+    <color name="primary_dark_material_dark">#ff000000</color>
+    <color name="primary_dark_material_light">#ff757575</color>
+    <color name="primary_material_dark">#ff212121</color>
+    <color name="primary_material_light">#ffefefef</color>
+    <color name="primary_text_default_material_dark">#ffffffff</color>
+    <color name="primary_text_default_material_light">#de000000</color>
+    <color name="primary_text_disabled_material_dark">#4dffffff</color>
+    <color name="primary_text_disabled_material_light">#39000000</color>
+    <color name="red_200">#ffef9a9a</color>
+    <color name="red_500">#fff44336</color>
+    <color name="red_background">#ff2c5aa9</color>
+    <color name="ripple_material_dark">#4dffffff</color>
+    <color name="ripple_material_light">#1f000000</color>
+
+    <color name="spb_default_color">#ff33b5e5</color>
+
+    <color name="tb_munion_item_force">#ffe3e3e3</color>
+    <color name="text_blue_blur">#e04285f4</color>
+    <color name="text_color">#ff414141</color>
+    <color name="title_bg">#ff2c5aa9</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="white">#ffffffff</color>
+    <color name="yellow_background">#ff2c5aa9</color>
+    <color name="round_corner_progress_bar_background_default">#5f5f5f</color>
+    <color name="round_corner_progress_bar_progress_default">#7f7f7f</color>
+    <color name="round_corner_progress_bar_secondary_progress_default">@android:color/transparent</color>
+
+    <integer-array name="gplus_colors">
+        <item>@color/gplus_color_1</item>
+        <item>@color/gplus_color_2</item>
+        <item>@color/gplus_color_3</item>
+        <item>@color/gplus_color_4</item>
+    </integer-array>
+
+    <color name="gray_drawable">#ff2c5aa9</color>
+    <color name="splash_bg_color">#4385F3</color>
+
+
+</resources>

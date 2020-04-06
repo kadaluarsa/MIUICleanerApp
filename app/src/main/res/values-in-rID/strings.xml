@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">MIUI Cleaner Plus</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Pengaturan</string>
+    <string name="scanning">Mencari…</string>
+    <string name="scanning_m_of_n">Mencari %1$d/%2$d</string>
+    <string name="settings_about">Tentang</string>
+    <string name="settings_basic">Dasar</string>
+    <string name="settings_grade">Feedback</string>
+    <string name="settings_share">Bagikan</string>
+    <string name="settings_version_update">Perbarui</string>
+    <string name="short_cut_name">Bersihkan</string>
+    <string name="slogan">Cepat dan ringan</string>
+    <string name="software_top_text">Aplikasi: %1$s, Digunanakan: %2$s</string>
+    <item type="string" name="spb_default_speed">1.0</item>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="store_picture_message">Ijinkan untuk menyimpan gambar di galeri?</string>
+    <string name="store_picture_title">Simpan gambar</string>
+    <string name="license">Dibuat oleh Wawetech</string>
+    <string name="mr_media_route_controller_pause">Jeda</string>
+    <string name="mr_media_route_controller_play">Mulai</string>
+    <string name="mr_media_route_controller_settings_description">Pengaturan Rute</string>
+    <string name="mr_media_route_controller_stop">Stop casting</string>
+    <string name="navigation_drawer_close">Tutup navigation drawer</string>
+    <string name="navigation_drawer_open">Buka navigation drawer</string>
+    <string name="phone_boost">Phone Boost</string>
+    <string name="battery_saver">Hemat Baterai</string>
+    <string name="boost_notice">Sebagian aplikasi mungkin akan terbuka setelah penutupan paksa.</string>
+    <string name="cast_notification_connected_message">Terhubung ke %1$s</string>
+    <string name="cast_notification_connecting_message">Menghubungkan ke %1$s</string>
+    <string name="cast_notification_disconnect">Putuskan</string>
+    <string name="category_advanced">Advance</string>
+    <string name="category_def">Umum</string>
+    <string name="category_other">Lainnya</string>
+    <string name="clean_memory">Bersihkan Memory</string>
+    <string name="cleaned">Dibersihkan (%1$s)</string>
+    <string name="com_facebook_loading">Loading...</string>
+    <item type="string" name="cpb_default_rotation_speed">1.0</item>
+    <item type="string" name="cpb_default_sweep_speed">1.0</item>
+    <string name="create_calendar_message">Ijinkan untuk membuat acara di kalender?</string>
+    <string name="create_calendar_title">Membuat acara kalender</string>
+    <string name="decline">Tolak</string>
+    <string name="define_smoothprogressbar" />
+    <string name="drawer_close">drawer_close</string>
+    <string name="drawer_open">drawer_open</string>
+    <string name="empty_cache">Cache kosong.</string>
+    <string name="font_fontFamily_material_item">sans-serif</string>
+    <string name="junk_clean">Berihkan Sampah</string>
+    <string name="app_software_manage">Kelola App</string>
+    <string name="banner">ca-app-pub-2000263817425717/1957491587</string>
+    <string name="inter">ca-app-pub-2000263817425717/3434224781</string>
+    <string name="press_to_exit">Pencet lagi untuk keluar aplikasi</string>
+
+</resources>

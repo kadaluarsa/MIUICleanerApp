@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff6f6f6">
+
+        <TextView
+            android:id="@+id/topText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_right"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:layout_marginTop="@dimen/margin_right"
+            android:text=""
+            android:textColor="#ff787878" />
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/topText"
+            android:clipToPadding="false"
+            android:divider="@null"
+            android:dividerHeight="4.0dip"
+            android:fastScrollEnabled="true"
+            android:focusable="true"
+            android:layoutAnimation="@anim/listview_layout_animation"
+            android:listSelector="@android:color/transparent"
+            android:padding="12.0dip"
+            android:scrollbars="none" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/progressBar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="?android:windowBackground"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <fr.castorflex.android.circularprogressbar.CircularProgressBar
+            android:id="@+id/progressBar2"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:indeterminate="true"
+            android:visibility="gone"
+            app:cpb_colors="@array/gplus_colors" />
+
+        <com.kadaluarsa.cleaner.views.RotateLoading
+            android:id="@+id/rotate_loading"
+            android:layout_width="88.0dip"
+            android:layout_height="88.0dip"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/progressBarText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="4.0dip"
+            android:singleLine="true"
+            android:text="@string/scanning"
+            android:textAppearance="?android:textAppearanceSmall" />
+    </LinearLayout>
+</FrameLayout>

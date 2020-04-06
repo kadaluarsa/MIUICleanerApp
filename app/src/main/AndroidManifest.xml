@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kadaluarsa.cleanerr" >
+
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.kadaluarsa.cleaner.base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:theme="@style/TranslateThemeFull"
+            android:name="com.kadaluarsa.cleaner.ui.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.kadaluarsa.cleaner.ui.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyAppTheme"/>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.kadaluarsa.cleaner.ui.MemoryCleanActivity"
+            android:theme="@style/MyTranslucentAppTheme" />
+
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.kadaluarsa.cleaner.ui.AutoStartManageActivity"
+            android:theme="@style/MyTranslucentAppTheme" />
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.kadaluarsa.cleaner.ui.SoftwareManageActivity"
+            android:theme="@style/MyTranslucentAppTheme" />
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.kadaluarsa.cleaner.ui.RubbishCleanActivity"
+            android:theme="@style/MyTranslucentAppTheme" />
+
+
+        <service android:name="com.kadaluarsa.cleaner.service.CleanerService" android:exported="false" />
+        <service android:name="com.kadaluarsa.cleaner.service.CoreService" android:exported="false" />
+
+        <receiver android:name="com.kadaluarsa.cleaner.service.NotificationEveryDayReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

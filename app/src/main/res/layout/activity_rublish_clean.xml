@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:counter="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/header_height"
+            android:background="@color/yellow_background"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <com.kadaluarsa.cleaner.widget.textcounter.CounterView
+                    android:id="@+id/textCounter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\ 250"
+                    android:textColor="@color/white"
+                    android:textSize="52.0sp"
+                    counter:autoStart="false" />
+
+                <TextView
+                    android:id="@+id/sufix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_right"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_toRightOf="@+id/textCounter"
+                    android:text="KB"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_middle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sufix"
+                    android:layout_marginLeft="@dimen/margin_right"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_toRightOf="@+id/textCounter"
+                    android:text="Freeable"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_middle" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/progressBar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/header"
+            android:background="?android:windowBackground"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <fr.castorflex.android.circularprogressbar.CircularProgressBar
+                android:id="@+id/progressBar2"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:indeterminate="true"
+                android:visibility="gone"
+                counter:cpb_colors="@array/gplus_colors" />
+
+            <com.kadaluarsa.cleaner.views.RotateLoading
+                android:id="@+id/rotate_loading"
+                android:layout_width="88.0dip"
+                android:layout_height="88.0dip"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/progressBarText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4.0dip"
+                android:singleLine="true"
+                android:text="@string/scanning"
+                android:textAppearance="?android:textAppearanceSmall" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/memory_ads_container"
+            android:layout_below="@+id/header"
+            android:clipToPadding="false"
+            android:divider="@null"
+            android:dividerHeight="4.0dip"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="true"
+            android:fitsSystemWindows="true"
+            android:focusable="true"
+            android:layoutAnimation="@anim/listview_layout_animation"
+            android:listSelector="@android:color/transparent"
+            android:padding="12.0dip"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="none"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/empty"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/empty_cache"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:visibility="gone" />
+
+        <FrameLayout
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/memory_ads_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="fill_horizontal|bottom|center"
+            android:layout_marginBottom="@dimen/button_height"
+            android:visibility="visible">
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_lin"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/clear_button"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/btn_normal_green"
+                android:gravity="center"
+                android:text="Clean Junk"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_large" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:app1="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/layout_container2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/backgroud_layout"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="192.0dip"
+                android:layout_height="192.0dip"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center">
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <com.kadaluarsa.cleaner.views.HoloCircularProgressBar
+                        android:id="@+id/clean_done_holoCircularProgressBar"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        app1:marker_progress="0.0"
+                        app1:marker_visible="false"
+                        app1:progress="1"
+                        app1:progress_background_color="@color/circle_progress_background"
+                        app1:progress_color="@color/circle_progress"
+                        app1:stroke_width="6.0dip" />
+
+                    <ImageView
+                        android:id="@+id/clean_done_iv_bg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="16.0dip"
+                        android:background="@drawable/circle_floating_bg"
+                        android:rotation="-30.0"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/clean_done_iv_done"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="40.0dip"
+                        android:src="@drawable/ic_cleaning"
+                        android:visibility="visible" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/clean_up_rocket"
+                        android:layout_width="112.0dip"
+                        android:layout_height="112.0dip"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/clean_up_done_tv_notice"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.0dip"
+                android:layout_marginRight="16.0dip"
+                android:layout_marginTop="32.0dip"
+                android:gravity="center"
+                android:text="@string/boost_notice"
+                android:textColor="@color/white"
+                android:textSize="12.0sp"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:id="@+id/clean_up_done_icon_container"
+                android:layout_width="144.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="32.0dip">
+
+                <TextView
+                    android:id="@+id/clean_up_tv_done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="32.0dip"
+                    android:background="@drawable/button_done_selector"
+                    android:gravity="center"
+                    android:minWidth="64.0dip"
+                    android:paddingBottom="8.0dip"
+                    android:paddingLeft="32.0dip"
+                    android:paddingRight="32.0dip"
+                    android:paddingTop="8.0dip"
+                    android:text="DONE"
+                    android:textColor="@color/phoneboost_text_top_color_white_blue"
+                    android:textSize="16.0sp"
+                    android:typeface="sans"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

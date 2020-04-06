@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_background_white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="16.0dip">
+
+    <ImageView
+        android:id="@+id/app_icon"
+        android:layout_width="@android:dimen/app_icon_size"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:layout_marginEnd="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:contentDescription="@null" />
+
+    <LinearLayout
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/disable_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:background="@drawable/switch_on"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="12.0sp" />
+</LinearLayout>

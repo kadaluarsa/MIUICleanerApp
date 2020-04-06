@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/phone_boost"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/ripple_list_button"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle_bg_main"
+                android:padding="8.0dip">
+
+                <ImageView
+                    android:id="@+id/main_iv_clean_up"
+                    android:layout_width="24.0dip"
+                    android:layout_height="24.0dip"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_rocket1" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12.0dip"
+                android:text="MEMORY BOOST"
+                android:textColor="@color/text_blue_blur"
+                android:textSize="14.0sp"
+                android:typeface="monospace" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16.0dip"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:id="@+id/junk_clean"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/ripple_list_button"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle_bg_main"
+                android:padding="8.0dip">
+
+                <ImageView
+                    android:id="@+id/main_iv_phone_boost"
+                    android:layout_width="24.0dip"
+                    android:layout_height="24.0dip"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_delete_black_48dp" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12.0dip"
+                android:text="JUNK FILES"
+                android:textColor="@color/text_blue_blur"
+                android:textSize="14.0sp"
+                android:typeface="monospace" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="16.0dip"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/app_manager"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/ripple_list_button"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle_bg_main"
+                android:padding="8.0dip">
+
+                <ImageView
+                    android:id="@+id/main_iv_manage_app"
+                    android:layout_width="24.0dip"
+                    android:layout_height="24.0dip"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_dashboard_black" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/app_manager_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12.0dip"
+                android:text="APP MANAGER"
+                android:textColor="@color/text_blue_blur"
+                android:textSize="14.0sp"
+                android:typeface="monospace" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16.0dip"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:id="@+id/background_app"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/ripple_list_button"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle_bg_main"
+                android:padding="8.0dip">
+
+                <ImageView
+                    android:id="@+id/main_iv_battery_saver"
+                    android:layout_width="24.0dip"
+                    android:layout_height="24.0dip"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_settings_ethernet_black_48dp" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12.0dip"
+                android:text="BACKGROUND"
+                android:textColor="@color/text_blue_blur"
+                android:textSize="14.0sp"
+                android:typeface="monospace" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
